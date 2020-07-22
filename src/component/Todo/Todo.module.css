@@ -1,0 +1,91 @@
+.Todo {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+    padding: 2% 3%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--great-box-shadow);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    -moz-transition: var(--transition);
+    cursor: pointer;
+}
+
+.complete {
+    box-shadow: var(--thin-box-shadow);
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+}
+
+.complete .name {
+    text-decoration: line-through;
+    text-decoration-color: var(--fourth-color);
+}
+
+.name {
+    color: var(--fourth-color);
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.7px;
+    text-transform: capitalize;
+    color: #3030308e;
+    user-select: none;
+}
+
+.removeIcon {
+    width: 1.3em;
+    height: 1.3em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-left: 1rem;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid var(--fourth-color);
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    -moz-transition: var(--transition);
+}
+
+input[type='checkbox']:checked {
+    border-color: var(--fifth-color);
+    background: var(--fifth-color);
+}
+
+input[type='checkbox']:checked::before {
+    opacity: 1;
+}
+
+input[type='checkbox']::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 1px;
+    left: 6px;
+    width: 6px;
+    height: 1.2rem;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}

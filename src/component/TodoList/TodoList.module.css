@@ -1,0 +1,30 @@
+.TodoList {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 2rem;
+    animation: fadeIn .3s ease;
+}
+
+.itemEnter {
+    opacity: 0;
+}
+
+.itemEnterActive {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.itemExitDone {
+    opacity: 0;
+}
+
+.itemExitActive {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,59 @@
+.Container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: var(--third-color);
+    border-radius: 1rem;
+    padding: 5% 3%;
+    box-shadow: 0 2.5rem 5rem #FBAB6E, 0 2rem 2rem #FBAB6E;
+    padding-bottom: 4rem;
+}
+
+.heading {
+    display: flex;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo path {
+    fill: var(--primary-color);
+}
+
+.Container::-webkit-scrollbar {
+    display: none;
+}
+
+.day {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+}
+
+.date {
+    font-size: 1.4rem;
+    color: var(--sixth-color);
+}
+
+.errorMessage {
+    position: absolute;
+    top: 3rem;
+    font-size: 1.4rem;
+    color: var(--sixth-color);
+}
+
+.callToAction {
+    font-size: 2.5rem;
+    color: var(--fifth-color);
+    margin-top: 2rem;
+    animation: fadeIn .5s ease;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
